@@ -10,3 +10,12 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+import './polyfills';
+import {
+  bootstrapApplication
+} from '@angular/platform-browser';
+import {
+  AppComponent
+} from './app/app.component';
+
+bootstrapApplication(AppComponent);

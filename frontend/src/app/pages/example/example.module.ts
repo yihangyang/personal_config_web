@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExampleComponent } from './example.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ColumnsChartModule } from 'src/app/components/columns-chart/columns-chart.module';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
     ExampleComponent
   ],
   imports: [
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ColumnsChartModule
   ],
 })
 export class ExampleModule { }
