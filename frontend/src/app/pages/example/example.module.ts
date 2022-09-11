@@ -3,18 +3,16 @@ import { ExampleComponent } from './example.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ColumnsChartModule } from 'src/app/components/columns-chart/columns-chart.module';
 
-
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: ExampleComponent,
   },
   {
     path: '**',
-    redirectTo: 'dashboard',
+    redirectTo: '',
   },
 ];
-
 
 @NgModule({
   declarations: [
